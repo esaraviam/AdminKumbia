@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/models/sesion.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/models/usuario.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/controllers/login_controller.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/controllers/usuario_controller.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/libs/admin_controller.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/controllers/index_controller.php</file>
+            <file>file:/C:/wamp/www/KumbiaSb2/default/app/views/_shared/partials/nav/navbar.phtml</file>
+        </group>
+    </open-files>
+</project-private>

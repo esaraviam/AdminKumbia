@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset=<?= APP_CHARSET ?> >
+        <title>Red Eraser</title>
+        <!--?php Tag::css('bootstrap.min') ?-->
+        <?php Tag::css('bootstrap.min') ?>
+        <?php Tag::css('font-awesome.min') ?>
+        <?php Tag::css('metisMenu.min') ?>
+        <?php Tag::css('morris') ?>
+        <?php Tag::css('pickadate') ?>
+        <?php Tag::css('sb-admin-2') ?>
+        <?php Tag::css('timeline') ?>
+        <?= Html::includeCss() ?>
+        <?= Tag::js("jquery.min"); ?>
+        <?= Tag::js("bootstrap.min"); ?>
+        <?= Tag::js("html5shiv"); ?>
+
+        <?= Tag::js("metisMenu.min"); ?>
+        <?= Tag::js("morris-data"); ?>
+        <?= Tag::js("morris.min"); ?>
+        <?= Tag::js("raphael-min"); ?>
+        <?= Tag::js("sb-admin-2"); ?>
+    </head>
+    <body>
+        <div id="wrapper">  
+            <?= View::partial("nav/navbar"); ?>
+            <div id="page-wrapper" >
+                <div class="container-fluid">
+                    <?php View::content() ?>
+                </div> 
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+</html>

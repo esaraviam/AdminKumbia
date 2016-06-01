@@ -1,0 +1,42 @@
+
+<?php View::content() ?>
+<?php if ($data) : ?>
+    <br/>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <?= ucwords("$model"), ": <span>$action_name</span>" ?>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <?php View::content(); ?>
+                        <div class="col-8 offset-2">
+                            <ul>
+                                <?php foreach ($data->fields as $field) : ?>
+                                    <li><strong><?= $data->alias[$field] ?> :</strong>  <?= h($data->$field) ?></li>
+                                <?php endforeach ?>
+                            </ul>
+                        </div>
+
+                        <div class="col-12">
+                            <a href="../" class="btn btn-default">Listado</a>
+                            <a href="../crear/" class="btn btn-primary">Crear registro</a>
+                            <a href="../editar/<?= $data->id ?>" class="btn btn-warning">Editar</a>
+                            <a class="del btn btn-danger" title="¿Seguro que quiere borrar?" href="../borrar/<?= $data->id ?>" onclick="return confirm('¿Está seguro?');">Borrar</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php else : ?>
+    <?php header("HTTP/1.0 404 Not Found") ?>
+    <h1>No existe</h1>
+    <div class="actions">
+        <a href="../">Listado</a>
+        <a href="../crear/">Crear registro</a>
+    </div>
+<?php endif ?>
